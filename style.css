@@ -1,0 +1,42 @@
+ /* To normalize the box model */
+ * {
+   box-sizing: border-box;
+ }
+
+ body {
+   margin: 0;
+   font-family: Arial;
+   background: #ebe7e7;
+ }
+
+ .header {
+   text-align: center;
+   padding: 32px;
+   background: #e0dddd;
+ }
+
+ .gallery {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 16px;
+   /* border: 1px solid red; */
+   max-width: 1400px;
+   margin: 0 auto;
+   padding: 20px 10px;
+ }
+
+ .gallery img {
+   width: 100%;
+   max-width: 350px;
+   height: 300px;
+   object-fit: cover;
+   border-radius: 10px;
+ }
+
+ .gallery::after {
+   content: " ";
+   width: 720px;
+ }
