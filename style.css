@@ -9,7 +9,7 @@
    background: #ebe7e7;
  }
 
- .header {
+ .header, footer {
    text-align: center;
    padding: 32px;
    background: #e0dddd;
